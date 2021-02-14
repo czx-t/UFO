@@ -479,7 +479,7 @@ function showTaskProcess() {
 }
 //助力好友
 async function doHelp() {
-  for (let plantUuid of newShareCodes) {
+  for (let plantUuid of $.newShareCodes) {
     console.log(`开始助力京东账号${$.index} - ${$.nickName}的好友: ${plantUuid}`);
     if (!plantUuid) continue;
     if (plantUuid === $.myPlantUuid) {
