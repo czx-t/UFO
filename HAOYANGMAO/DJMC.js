@@ -446,7 +446,7 @@ async function slaveHelp() {
   //$.log(`\n因1.6日好友助力功能下线。故暂时屏蔽\n`)
   //return
   let helpPeoples = '';
-  for (let code of newShareCodes) {
+  for (let code of $.newShareCodes) {
     console.log(`开始助力京东账号${$.index} - ${$.nickName}的好友: ${code}`);
     if (!code) continue;
     let response = await request(arguments.callee.name.toString(), {'shareCode': code});
