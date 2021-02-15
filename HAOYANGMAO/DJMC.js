@@ -630,7 +630,7 @@ getArrRandomly = (arr) => {
 
 
 getRandomArr = (arr=[],num) => {
-  const tmpArr = this.getArrRandomly(arr);
+  const tmpArr = getArrRandomly(arr);
   let arrList = [];
   for (let i = 0; i < num; i++) {
     arrList.push(tmpArr[i]);
